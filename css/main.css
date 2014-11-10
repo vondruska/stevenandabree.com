@@ -1,0 +1,84 @@
+body {
+	background: url('/img/bg.png') bottom left repeat-x #eaeaea fixed;
+	min-height: 100%;
+	padding-bottom:50px;
+}
+
+.wrapper {
+	width: 730px;
+	margin:0 auto;
+}
+
+header {
+	padding: 15px 0 15px 0;
+	opacity: 0;
+	position: fixed;
+	width: 100%;
+	background-color:#eaeaea;
+	z-index: 1000;
+}
+
+header .logo {
+	background: url('/img/logo.png') no-repeat;
+	width:110px;
+	height:66px;
+	float: left;
+}
+
+header .nav {
+	float: right;
+	width: 63%;
+}
+
+header .nav ul {list-style: none; float: right; width: 60%;}
+
+header .nav li a {
+	font-family: 'Myriad Pro';
+		float: left;
+		display: block;
+		padding: 5px;
+		margin-left: 15px;
+		color: #000;
+		font-style: none;
+		     -webkit-transition: background-color 250ms linear;
+     -moz-transition: background-color 250ms linear;
+     -o-transition: background-color 250ms linear;
+     -ms-transition: background-color 250ms linear;
+     transition: background-color 250ms linear;
+}
+
+header .nav li a:hover,  header .nav li a.selected{
+	background-color: #ccc;
+	-moz-border-radius: 3px;
+border-radius: 3px;
+
+}
+
+.slideshow {
+	padding-top: 50px;
+	display:none;
+}
+
+.slideshow .img {
+	text-align:center;
+	width: 100%;
+}
+
+.slideshow .img img {
+		box-shadow: 0 0 20px #000;
+}
+
+#body { padding-top: 100px;}
+
+iframe{width: 100%; height: 300px;}
+
+#photo-list a { float: left; margin: 3px; opacity: .8;}
+#photo-list a:hover { opacity: 1;
+-webkit-transition: opacity 100ms linear;
+     -moz-transition: opacity 100ms linear;
+     -o-transition: opacity 100ms linear;
+     -ms-transition: opacity 100ms linear;
+     transition: opacity 100ms linear;}
+#photo-list a img {  box-shadow: 0 0 5px #000; }
+
+.clear {clear: both;}
