@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Steven &amp; Abree Vondruska</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="font/angelina/stylesheet.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/jquery.backstretch.js"></script>
+        <script>
+        $(function() {
+        	$.backstretch("/img/bkg.jpg");
+
+        	$('.preface').delay(1500).fadeIn(1000,function() {
+        		setTimeout(function() {
+$('.preface').fadeOut(2000);
+$('.title').fadeIn(2000);
+        		}, 3000)
+        	});
+
+        });
+        </script>
+        <style>
+        .title, .preface {
+        	position:absolute;
+        	color: #fff;
+        	font-family: AngelinaRegular;
+        	text-shadow: 0 0 15px #000;
+			line-height: 43px;
+			text-align: center;
+			display:none;
+        }
+
+        .title {        	bottom:7%;
+        	left:11%;}
+
+        	.preface {bottom:10%; left: 15%;}
+
+        .title h1, .title h2, .preface h1 {
+        	padding:0; margin:0;
+        }
+
+        .title h1 {font-size: 66px;}
+        .title h2 {font-size: 50px;}
+
+        .preface h1 { font-size: 60px; }
+        </style>
+</head>
+<body>
+	<div class="preface">
+		<h1>It's official!</h1>
+	</div>
+
+	<div class="title">
+<h1>Steven &amp; Abree</h1>
+<h2>are married!</h2>
+</div>
+<script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-471488-5']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+	</body>
+	</html>
